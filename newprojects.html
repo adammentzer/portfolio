@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale =1">
+    <link rel="icon" href="images/logo_icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Projects</title>
+</head>
+<body class = "aurora">
+  <a class = "skip" href="#skip" >Skip to Main Content</a>
+  <header>
+    <p id = "myname">Adam Mentzer</p>
+    <!-- add your personal image above -->
+    <nav>
+      <ul class="nav_links">
+        <li class="nav_item"><a href="index.html">Home</a></li>
+        <li class="nav_item"><a href="aboutme.html">About</a></li>
+        <li class="nav_item uppercase"><a href="newprojects.html">Projects</a></li>
+        <li class="nav_item"><a href="resume.html"> Resumé</a></li>
+        <li class="nav_item"><a href="misc.html">Miscellaneous</a></li>
+      </ul>
+  </nav>
+</header>
+  <main>
+ 
+  <h1 class = "whitelink">Projects</h1>
+  <div>
+  <h2 class = "whitelink" style = "text-decoration: underline;">UX Analysis - Slack</h2>
+  <p class = "whitelink">One of my assignments for SI 110 was to do a design analysis of a website, mobile 	application, 
+    or social media platform with respect to Jakob Nielsen’s 10 Heuristics for User Experience Design. 
+    I chose to review the desktop version of Slack. 
+      </br>
+      </br>
+    As the  pandemic necessitated heavy Slack use for school, I had curated a list of inadequacies (at least by my standards) in 
+     its interface and was eager to showcase what I’d learned thus far in the class. 
+     My main complaint was that it lacked a “landing page” for the user, as it instead constantly 
+     forces the user to be in one of their workspaces. This violates Nielsen's Third Heuristic, as it inhibits user freedom, control, and
+     desire to explore the application. In other words, should the user lose their place in the interface or make a mistake, there are no spaces for the user to have a high-level overview of their
+     workspaces nor are there any exits for them to “crash land” to. This decreases the user's confidence and makes them apprehensive about trying new capabilities of the application.
+      </br>
+      </br>
+      Among my other concerns were that some of the icons don’t represent what you would conventionally expect them to, 
+      the tendency for the screen to get cluttered with information, and that Slack seemed to cater towards power 
+      users rather than the average person.</p>
+    </br>
+      <p class = whiteproj> View the report <a class = "whitelink" href = slack.html> here</a>.</p>
+  </div>
+
+  <div>
+    <h2 class = "whitelink" style = "text-decoration: underline;">Priority Queues, Pairing Heaps, and Video Games</h2>
+    <p class = "whiteproj"> Simulated a video game in which the player (the user) 
+      is supposed to choose the highest-priority enemy to defeat through the implementation of priority queues using custom comparators. 
+      Additionally, the player could specify output modes that would detail previous player 
+      actions and enemy statistics 
+      (median lifespan, longest-living enemies, etc.) by implementing the aforementioned data structures in other ways. The second half of this project
+    was implementing a binary heap, unordered priority queue, and a pairing heap without the use of the C++ STL.</p>  
+    </div>
+    <div>
+      <h2 class = "whitelink" style = "text-decoration: underline;">Natural Language Processing Content Classifier (Piazza)</h2>
+      <p class = "whiteproj">Built program that employs machine learning and natural language processing techiques  to predict the topics of online forum posts, 
+        correctly labeling 87% of 2,988 real posts.
+        Architected and developed program in C++ using maps and binary search trees.
+        Learned about various machine learning models, choosing the most efficient solution for the classification task.</p>
+    </div>
+    <div>
+      <h2 class = "whitelink" style = "text-decoration: underline;">Zookeeper Pathway Optimization</h2>
+      <p class = "whiteproj">Built a program that implemented a modified version of Prim’s algorithm to construct a minimum spanning
+         tree while avoiding a predefined "danger zone" that could
+        only be added to the tree if certain constraints were satisfied. Other capabilities of program included solving the Traveling Salesperson
+        Problem through a branch-and-bound algorithm. The user could select for a more quickly retrieved yet suboptimal solution (nearest arbitrary 
+        insertion TSP heuristic).
+      </p>  
+    </div>
+    <div>
+      <h2 class = "whitelink" style = "text-decoration: underline;">Logfile Management</h2>
+      <p class = "whiteproj">Created a tool for storing, sorting, and generating log file reports where the user can search by category, keyword, and timestamp (single timestamp or a range). This project emphasized algorithmic 
+        runtime efficiency as well as taking advantage of the C++ STL 
+        in order to create the simplest and quickest solution.</p>  
+      </div>
+
+      <div>
+        <h2 class = "whitelink" style = "text-decoration: underline;">Web Backend</h2>
+        <p class = "whiteproj">Built a virtual office hours application for EECS 280 where the program would read and write HTTP subsets to handle requests pertaining to a queue of students/student information (name, position in queue, phyiscal location). 
+          As the goal of this project was to introduce students to working with APIs and creating web applications, 
+          this program was able to be hosted on a web server upon completion.</p>
+      </div>
+
+      <div>
+        <h2 class = "whitelink" style = "text-decoration: underline;">Three-Dimensional Puzzle</h2>
+        <p class = "whiteproj">  Implemented a backtracing algorithm to search for an endpoint given an arbitrary starting point in 
+          three-dimensional puzzles (sizes ranging from 4 tile spaces to 7 million), using custom data structures to allow for multiple modes
+            of both input and output (coordinate list and map).</p>  
+        </div>
+        <div>
+          <h2 class = "whitelink" style = "text-decoration: underline;">Computer Vision</h2>
+          <p class = "whiteproj">Achieved content-aware image resizing with the use of a seam-carving algorithm, where the program took four arguments
+          (input filename, output filename, desired width, and desired height) and used two matrices to identify the "lowest-priority" pixels and 
+            then modify the image.
+          </p>
+        </div>
+        <div>
+          <h2 class = "whitelink" style = "text-decoration: underline;">Euche Simulation</h2>
+          <p class = "whiteproj">Built a program to simulate euchre, a card game popular in the state of Michigan. 
+            Key components of this project included implementing algorithms for shuffling/dealing cards, 
+            defining card values in relation to one another, 
+            and using polymorphism/derived classes to create a protocol for the computer-controlled players that the user could 
+            compete against.</p>
+        </div>
+
+        <div>
+          <h2 class = "whitelink" style = "text-decoration: underline;">Event Seating</h2>
+          <p class = "whiteproj">At my cousin’s wedding reception this past July, I was looking around at all of the 	tables trying to figure out if there was any rhyme or reason to the seating arrangements.  	
+            Some tables were completely full (or even overfilled), 
+            while others had plenty of vacant seats. 
+            When she came around to my family’s table, I asked my cousin how she had arranged all of us. 
+            She said that she and my new cousin-in-law had done the seating by hand, and that it was a 
+            massive pain to take into account the different groups of people as well as the number of chairs/tables available to them. 
+            Wanting to brush up on my Python skills, I decided that I’d make a tool for creating seating arrangements with 
+            groups manually inputted by the user. The user could also sort people in different ways, such as:
+            <br>
+            <br>
+            a) optimizing for a given number of chairs at each table
+            <br>
+            b) finding how many people should be seated with a given number of tables
+            <br>
+            c) having the program determine how many chairs/tables are needed based on the average group size
+            <br>
+            d) letting each larger-than-average group get its own table, even though this increases the amount of empty seats 
+          <br>
+          <br>
+          Each of these options would print out what groups were at each table and who was in each group. Additionally, the program was designed so 
+          that the number of open seats at each table was minimized and so that as few groups as 
+          possible needed special accommodation (for each user preference).
+          <br>
+          <br>
+          Having furthered my education since creating this project, I am currently working 
+          on implementing disjoint sets to make sure that only people who know each other 
+          (e.g. bride’s family/groom’s family) are seated together.</p>
+        </div>
+  
+        <div>
+          <h2 class = "whitelink" style = "text-decoration: underline;">Boredom Fighter</h2>
+          <p class = "whiteproj">Like a lot of people, I hate being bored and feeling stagnant. Even when I have free time, I often face a lapse in creativity or decision paralysis where I feel like I just can’t find something to do. After describing this problem to a friend, they referenced <a href = "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0220736" style = "color: white;">this study about external reinforcement in decision making </a> 
+            and how it helped them make their own decisions. 
+            Knowing this, I resolved to create an app that would TELL me what to do when I was 
+            bored rather than having to come up with something myself. 
+            Because it wasn’t my own idea to shoot down, it was harder to refuse. 
+          <br>
+          <br>
+            Aside from the reasons above, the purpose of this project was to introduce myself to Swift and 
+            SwiftUI for iOS development. 
+          </p>
+
+          
+        </div>
+
+        <div>
+          <h2 class = "whitelink" style = "text-decoration: underline;">Michigan EcoData: Chemical Contamination Heatmap</h2>
+          <p class = "whiteproj">Created an online heatmap of displaying the prevalence of 
+            different harmful pollutants in each Michigan zip code using Python and HTML.
+
+        </div>
+
+        <div>
+          <h2 class = "whitelink" style = "text-decoration: underline;">This Website!</h2>
+          <p class = "whiteproj">In its original incarnation, this website was my final project for SI 339 (Web Design, Development, and Accessibility), 
+            with the goal of the project being to display what I had learned about HTML, CSS, and Javascript that semester. Requirements included mobile-first responsive design using flexbox/grid,
+            animations, contact forms, and embedded content.
+        </div>
+</main> 
+ 
+<footer>
+  <p class = "footerp"> <a style = "text-decoration: none;" href="mailto:amentzer@umich.edu">email</a> • <a style = "text-decoration: none;" href="https://www.linkedin.com/in/adam-mentzer">linkedin</a> • <a style = "text-decoration: none;"href="images/AdamMentzerResume2021F21PDF copy.pdf" download> resumé</a></p>
+</footer>
+
+</body>
+</html>
