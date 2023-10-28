@@ -31,9 +31,9 @@ body{
   text-align: center;
 
 }
-  iframe{
-    border: 1px solid rgba(0, 0, 0, 0.1); display: block; margin: auto; resize: both; border-radius: 12.5%; 
-  }
+iframe{
+  border: 1px solid rgba(0, 0, 0, 0.1); display: block; margin: auto; resize: both; border-radius: 12.5%; 
+}
   .flex-container {
     height: 100%;
     padding: 0;
@@ -56,8 +56,8 @@ body{
     display:flex;
     background: #fff;
     border-bottom: 3px solid #000000;
-    justify-content:center;
-    flex-direction: column;
+    justify-content:space-between;
+    flex-direction: row;
     align-items:center;
     position: sticky;
   }
@@ -81,12 +81,21 @@ body{
     padding-bottom: 2em;
   }
 
+  .waterfall{
+    background: rgb(110, 133, 143);
+    /* rgb(37, 121, 155); */
+  
+  }
+
   .nav_links{
-    display:flex;
+    display:none;
     justify-content:center;
-    flex-direction: column;
+    flex-direction: row;
     align-items:center;
     padding: 1px;
+    /* display:flex;
+    flex-direction: row;
+    justify-content: right; */
   }
 
   .landingInfo{
@@ -344,9 +353,53 @@ color:white;
 .eggplant{
    background: rgb(75, 21, 102);
 }
+/* Dropdown Button */
 
+.dropbtn {
+  background-color: #3498DB;
+  font-family:  'Poiret One', serif;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+/* Tablet View */
 @media screen and (min-width: 768px){
-  
+    .dropbtn{
+      display: none;
+    }
     header{
         
         display:flex;
@@ -358,6 +411,8 @@ color:white;
         position: sticky;
         top: 0;
         z-index:1;
+
+      
 
       }
       body{
@@ -432,6 +487,14 @@ color:white;
       }
      
 
+      .waterfall{
+        background: url('../images/water.gif');
+        
+        background-size: cover;
+        background-color: none;
+        background-repeat: no-repeat;
+      }
+
       .fade-in {
         animation: fadeIn ease 4s;
         -webkit-animation: fadeIn ease 4s;
@@ -476,6 +539,7 @@ color:white;
        
 }
 
+/* Desktop View */
 @media screen and (min-width: 1000px){
 
   .grid-index{

@@ -28,6 +28,16 @@
           <li class="nav_item"><a href="misc.html" class = "uppercase">Miscellaneous</a></li>
         </ul>
     </nav>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Menu</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About</a>
+        <a href="newprojects.html">Projects</a>
+        <a href="resume.html"> Resumé</a>
+        <a href="misc.html">Miscellaneous</a>
+      </div>
+    </div>
   </header>
  
   <main class="about" id="skip">
@@ -74,6 +84,27 @@
      </main>
      
   </body>
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
 </html>
 
 

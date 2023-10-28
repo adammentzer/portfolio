@@ -29,6 +29,16 @@
         <li class="nav_item"><a href="misc.html">Miscellaneous</a></li>
       </ul>
   </nav>
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Menu</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="index.html">Home</a>
+      <a href="aboutme.html">About</a>
+      <a href="newprojects.html">Projects</a>
+      <a href="resume.html"> Resumé</a>
+      <a href="misc.html">Miscellaneous</a>
+    </div>
+  </div>
 </header>
   <main>
  
@@ -66,7 +76,7 @@
     </div>
     <div>
       <h2 class = "whitelink" style = "text-decoration: underline;">Natural Language Processing Content Classifier (Piazza)</h2>
-      <p class = "whiteproj">Built program that employs machine learning and natural language processing techiques  to predict the topics of online forum posts, 
+      <p class = "whiteproj">Built program that employs machine learning and natural language processing techniques  to predict the topics of online forum posts, 
         correctly labeling 87% of 2,988 real posts.
         Architected and developed program in C++ using maps and binary search trees.
         Learned about various machine learning models, choosing the most efficient solution for the classification task.</p>
@@ -183,4 +193,25 @@
 </footer>
 
 </body>
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
 </html>
