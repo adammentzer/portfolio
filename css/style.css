@@ -1,6 +1,7 @@
 body{
     font-family:  'Poiret One', serif;
-    background:rgb(255, 255, 255);
+    /* background:rgb(255, 255, 255); */
+    background: url('../gifs/download.jpg');
     margin: 0;
     padding: 0;
     font-size: 16pt;
@@ -56,6 +57,7 @@ iframe{
     display:flex;
     background: #fff;
     border-bottom: 3px solid #000000;
+    border-top: 3px solid black;
     justify-content:space-between;
     flex-direction: row;
     align-items:center;
@@ -137,7 +139,6 @@ iframe{
     color: black;
     padding: 0 30px;
     font-weight: 200;
-    
   }
   
   .grid-index{
@@ -199,9 +200,9 @@ iframe{
     
   }
   .carddescription{
-padding-top: 3em;
-padding-bottom: 3em;
-color:white;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    color:white;
   }
 
   .card {
@@ -215,18 +216,14 @@ color:white;
    
   }
   .card > header {
-    
     background: #000000;
-    
     border-bottom: none;
     padding-top: 5px;
     padding-bottom: 20px;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     max-height: 100px;
-    
     position: static;
-  
   }
   .card > ul{
     list-style: none;
@@ -238,6 +235,12 @@ color:white;
     margin: 20px auto;
     
   }
+
+  .card > div{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   .hello{
   padding-top: 1em;
   }
@@ -258,6 +261,7 @@ color:white;
     padding: 30px;
     text-align: center;
     position: relative;
+    border-top: 3px solid #000000;
   }
 
   .center {
@@ -356,7 +360,7 @@ color:white;
 /* Dropdown Button */
 
 .dropbtn {
-  background-color: #3498DB;
+  background-color: #892dea;
   font-family:  'Poiret One', serif;
   color: white;
   padding: 16px;
@@ -366,7 +370,7 @@ color:white;
 }
 
 .dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
+  background-color: #3a1053;
 }
 
 .dropdown {
@@ -395,6 +399,25 @@ color:white;
 
 .show {display: block;}
 
+
+.gradient-background {
+  background: linear-gradient(300deg,deepskyblue,#41d6c1,#a941d6);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 /* Tablet View */
 @media screen and (min-width: 768px){
     .dropbtn{
@@ -415,15 +438,14 @@ color:white;
       
 
       }
-      body{
-        font-family: 'Poiret One', serif;
-        /* background: url('../gifs/intersection.gif'); */
-        background:rgb(255, 255, 255);
-        background-size: cover;
-        background-color: none;
-        background-repeat: no-repeat;
-    
-        
+    body{
+      font-family: 'Poiret One', serif;
+      background: url('../gifs/download.jpg');
+      background-size: cover;
+      background-color: none;
+      background-repeat: no-repeat;
+  
+      
       }
       .typewriter {
         animation: fadeIn ease 10s;
@@ -630,7 +652,7 @@ color:white;
 
     body{
       font-family: 'Poiret One', serif;
-      background:rgb(255, 255, 255);
+      background: url('../gifs/download.jpg');
       background-size: cover;
       background-color: none;
       background-repeat: no-repeat;
